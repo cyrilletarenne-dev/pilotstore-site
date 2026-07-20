@@ -77,6 +77,16 @@
   .duo p { color:var(--charcoal-mid); font-size:15.5px; }
   @media (max-width:720px){ .duo { grid-template-columns:1fr; } }
 
+  /* ===== En pratique ===== */
+  .pratique { background:var(--bg); padding-top:0; }
+  .trio { display:grid; grid-template-columns:1fr 1fr 1fr; gap:24px; margin-top:36px; }
+  .trio .card { background:var(--paper); border-radius:var(--r-card); padding:26px 26px; }
+  .trio .ico { width:48px; height:48px; border-radius:12px; background:#ecfdf5; display:flex; align-items:center; justify-content:center; margin-bottom:16px; }
+  .trio .ico svg { width:26px; height:26px; }
+  .trio h3 { font-size:18px; font-weight:700; margin-bottom:8px; }
+  .trio p { color:var(--charcoal-mid); font-size:15px; }
+  @media (max-width:860px){ .trio { grid-template-columns:1fr; } }
+
   /* ===== Contact ===== */
   .contact-sec { padding-bottom:88px; }
   .cta { background:var(--primary); color:#fff; border-radius:var(--r-card); padding:40px; text-align:center; }
@@ -191,12 +201,41 @@
     <div class="duo">
       <div class="card">
         <h3>Un outil que votre équipe va vraiment utiliser</h3>
-        <p>PilotStore n'est pas un outil de contrôle : c'est un compagnon de travail. Chacun sait ce qu'il a à faire, laisse une note pour le lendemain, retrouve les numéros utiles, reçoit les infos importantes. Simple, rapide, sur tablette comme sur ordinateur — il a été construit dans un magasin, avec une équipe, pas dans un bureau.</p>
+        <p>PilotStore n'est pas un outil de contrôle : c'est un compagnon de travail. Chacun sait ce qu'il a à faire, laisse une note pour le lendemain, retrouve les numéros utiles, reçoit les infos importantes. Simple, rapide, sur tablette Android comme sur ordinateur — il a été construit dans un magasin, avec une équipe, pas dans un bureau.</p>
       </div>
       <div class="card">
         <h3>Né dans un magasin, pas dans un bureau</h3>
         <p>PilotStore a été créé par un gérant de commerce de proximité, pour son propre magasin. Chaque fonctionnalité est née d'un besoin réel du terrain, testée et utilisée tous les jours par une vraie équipe, dans un vrai point de vente. Aujourd'hui, il équipe plusieurs magasins au quotidien.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EN PRATIQUE ===== -->
+<section class="pratique">
+  <div class="wrap">
+    <div class="eyebrow">En pratique</div>
+    <h2>Un outil modulaire,<br>du matériel simple</h2>
+    <div class="trio">
+
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="4.5" rx="2"/><rect x="3" y="10.5" width="18" height="4.5" rx="2"/><rect x="3" y="17" width="18" height="4.5" rx="2" stroke-dasharray="2.5 2.5" opacity="0.55"/><circle cx="7" cy="6.25" r="0.9" fill="#059669" stroke="none"/><circle cx="7" cy="12.75" r="0.9" fill="#059669" stroke="none"/></svg></div>
+        <h3>Vous choisissez vos modules</h3>
+        <p>Le menu de PilotStore est modulaire : chaque section s'active ou se masque selon les besoins du magasin. Vous démarrez avec l'essentiel, vous élargissez quand vous êtes prêt — l'outil s'adapte à votre organisation, pas l'inverse.</p>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="2.5" width="16" height="19" rx="2.5"/><path d="M10 18.5h4"/></svg></div>
+        <h3>Une tablette Android suffit</h3>
+        <p>En magasin, PilotStore s'utilise sur tablette Android, avec son application dédiée. Sur ordinateur, tout passe par le navigateur — rien à installer, pas de serveur, pas de matériel exotique. Seul prérequis : un accès wifi en magasin, indispensable au fonctionnement.</p>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.8" stroke-linecap="round"><path d="M6 8V3.5h12V8"/><rect x="3" y="8" width="18" height="8" rx="2"/><path d="M6 16v4.5h12V16"/><path d="M8.5 19h7"/><circle cx="18" cy="11" r="0.9" fill="#059669" stroke="none"/></svg></div>
+        <h3>Les étiquettes en un clic</h3>
+        <p>Pour les dates courtes et l'anti-gaspi, PilotStore pilote une imprimante d'étiquettes Zebra ZD421d (à acquérir séparément) : le produit est scanné, l'étiquette sort, directement depuis la tablette.</p>
+      </div>
+
     </div>
   </div>
 </section>
