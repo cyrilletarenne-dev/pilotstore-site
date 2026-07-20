@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mes premiers pas dans PilotStore</title>
+<meta name="description" content="Guide de démarrage PilotStore : les premiers paramétrages de votre magasin, étape par étape.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary:#10b981; --primary-light:#34d399; --primary-dark:#059669;
+    --charcoal:#1f2937; --charcoal-mid:#374151; --charcoal-deep:#111827;
+    --bg:#e2e8f0; --paper:#ffffff; --text:#1f2937; --text-2:#6b7280; --r-card:16px;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Inter',sans-serif; color:var(--text); background:var(--bg); line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:0 24px; }
+
+  header { background:linear-gradient(150deg,var(--charcoal) 0%,var(--charcoal-mid) 55%,var(--charcoal-deep) 100%); color:#fff; padding:56px 0 48px; text-align:center; }
+  .mark { font-weight:900; font-size:26px; letter-spacing:-1px; }
+  .mark .p { color:var(--primary-light); }
+  header h1 { font-size:clamp(28px,5vw,40px); font-weight:900; letter-spacing:-1px; margin-top:20px; }
+  header p { color:#d1d5db; margin-top:10px; font-size:17px; }
+  .mark a { color:inherit; text-decoration:none; }
+
+  .intro { padding:44px 0 8px; }
+  .intro .card { background:var(--paper); border-radius:var(--r-card); border-left:6px solid var(--primary); padding:22px 26px; font-size:16px; }
+
+  .steps { padding:36px 0 64px; }
+  .step { position:relative; padding-left:72px; margin-bottom:22px; }
+  .step-line { position:absolute; left:25px; top:56px; bottom:-22px; width:3px; background:#cbd5e1; border-radius:3px; }
+  .step:last-child .step-line { display:none; }
+  .step-num { position:absolute; left:0; top:2px; width:52px; height:52px; border-radius:50%; background:var(--primary); color:#fff; font-weight:800; font-size:21px; display:flex; align-items:center; justify-content:center; }
+  .step-card { background:var(--paper); border-radius:var(--r-card); padding:22px 26px; }
+  .step-card h2 { font-size:19px; font-weight:700; margin-bottom:8px; }
+  .step-card p { color:var(--charcoal-mid); font-size:15.5px; margin-bottom:8px; }
+  .step-card p:last-child { margin-bottom:0; }
+  .astuce { margin-top:12px; background:#ecfdf5; border-radius:10px; padding:10px 14px; font-size:14px; color:var(--primary-dark); }
+  .astuce strong { font-weight:700; }
+  code { background:#f1f5f9; border-radius:6px; padding:1px 7px; font-size:14px; color:var(--charcoal); font-family:'Inter',sans-serif; font-weight:600; }
+
+  .fin { padding:0 0 72px; }
+  .fin .card { background:linear-gradient(135deg,var(--charcoal),var(--charcoal-deep)); color:#fff; border-radius:var(--r-card); padding:32px; text-align:center; }
+  .fin h2 { font-size:22px; font-weight:800; margin-bottom:10px; }
+  .fin p { color:#d1d5db; margin-bottom:20px; }
+  .fin a { display:inline-block; background:var(--primary); color:#fff; text-decoration:none; font-weight:700; padding:12px 26px; border-radius:10px; }
+
+  footer { background:var(--charcoal-deep); color:#6b7280; text-align:center; padding:26px 16px; font-size:13.5px; }
+  footer .mark { font-size:14px; color:#9ca3af; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="mark"><a href="/"><span class="p">Pilot</span>Store</a></div>
+    <h1>Mes premiers pas dans PilotStore</h1>
+    <p>Les premiers paramétrages de votre magasin, étape par étape.</p>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="wrap">
+    <div class="card">Bienvenue à bord ! Ce guide vous accompagne pour la mise en route de PilotStore dans votre magasin. Comptez une petite heure pour l'essentiel — et rien ne vous oblige à tout faire d'un coup : chaque étape peut être reprise plus tard, et vous pouvez démarrer avec les modules de base puis élargir à votre rythme.</div>
+  </div>
+</section>
+
+<section class="steps">
+  <div class="wrap">
+
+    <div class="step">
+      <div class="step-num">1</div><div class="step-line"></div>
+      <div class="step-card">
+        <h2>Connectez-vous</h2>
+        <p>Votre compte gérant vous a été fourni à l'ouverture de votre magasin dans PilotStore. Connectez-vous depuis un ordinateur pour cette phase de paramétrage — c'est plus confortable que la tablette pour la configuration initiale.</p>
+        <div class="astuce"><strong>Astuce :</strong> changez votre mot de passe dès la première connexion, dans <code>Paramètres</code>.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div><div class="step-line"></div>
+      <div class="step-card">
+        <h2>Votre magasin</h2>
+        <p>Dans <code>Paramètres</code>, vérifiez les informations de votre magasin : nom affiché, horaires d'ouverture. Ce sont elles qui apparaîtront sur l'écran d'accueil de votre équipe et dans le récapitulatif du soir.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div><div class="step-line"></div>
+      <div class="step-card">
+        <h2>Choisissez vos modules</h2>
+        <p>Le menu de PilotStore est modulaire : chaque section peut être activée ou masquée. Commencez léger — les contrôles de caisse, les tâches du jour et les températures sont un excellent trio de départ — puis activez le reste quand l'équipe a pris ses marques.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div><div class="step-line"></div>
+      <div class="step-card">
+        <h2>Créez votre équipe</h2>
+        <p>Ajoutez les membres de votre équipe et attribuez à chacun son niveau d'accès. Chaque personne pourra ainsi voir ses tâches, consigner incidents et contrôles — et tout sera tracé à son nom.</p>
+        <div class="astuce"><strong>Astuce :</strong> désignez un « bras droit » avec des droits étendus — un manager qui pourra paramétrer sans passer par vous.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">5</div><div class="step-line"></div>
+      <div class="step-card">
+        <h2>Vos contrôles de caisse</h2>
+        <p>Déclarez vos caisses et vos créneaux de contrôle (par exemple à l'ouverture et à la prise de poste de l'après-midi). PilotStore générera automatiquement les contrôles chaque jour — il n'y aura plus qu'à les faire.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">6</div><div class="step-line"></div>
+      <div class="step-card">
+        <h2>Vos équipements froids</h2>
+        <p>Listez vos meubles froids, frigos et chambres (négative, positive) avec leurs normes de température. Ce sont eux que votre équipe relèvera chaque jour — et les relevés hors normes seront signalés dans le récapitulatif du soir.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">7</div><div class="step-line"></div>
+      <div class="step-card">
+        <h2>Vos tâches du jour</h2>
+        <p>Créez les tâches récurrentes de votre magasin : commandes, contrôles, nettoyages, préparations… avec leur horaire et, si besoin, leurs instructions détaillées. C'est le squelette de la journée de votre équipe — soignez-le, il travaillera pour vous tous les jours.</p>
+        <div class="astuce"><strong>Astuce :</strong> les instructions rendent chaque tâche autonome : un nouvel arrivant sait quoi faire sans demander.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">8</div><div class="step-line"></div>
+      <div class="step-card">
+        <h2>La tablette de l'équipe</h2>
+        <p>Installez l'application PilotStore sur votre tablette Android, connectée au wifi du magasin, et laissez-la à disposition de l'équipe — c'est elle qui servira au quotidien pour cocher les tâches, relever les températures et consigner les incidents.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">9</div><div class="step-line"></div>
+      <div class="step-card">
+        <h2>L'imprimante d'étiquettes <span style="color:var(--text-2); font-weight:600; font-size:14px;">(si module DLC)</span></h2>
+        <p>Si vous utilisez le module dates courtes / anti-gaspi, connectez votre imprimante Zebra ZD421d au réseau du magasin et déclarez-la dans <code>Paramètres</code>. Les étiquettes sortiront ensuite en un clic depuis la tablette.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">10</div><div class="step-line"></div>
+      <div class="step-card">
+        <h2>Le récapitulatif du soir</h2>
+        <p>Renseignez l'adresse email qui recevra, chaque soir après la clôture, le récapitulatif complet de la journée : chiffre d'affaires, caisse, alertes températures, incidents, ruptures. Votre journée, dans votre poche, où que vous soyez.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="fin">
+  <div class="wrap">
+    <div class="card">
+      <h2>Et voilà — votre copilote est en place.</h2>
+      <p>Une question pendant le paramétrage ? Un doute sur une étape ? Écrivez-nous, on vous guide.</p>
+      <a href="/#contact">Nous contacter</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="mark"><span class="p" style="color:var(--primary-dark);">Pilot</span>Store</span> — Le copilote du quotidien
+</footer>
+
+</body>
+</html>
